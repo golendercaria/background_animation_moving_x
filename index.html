@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Background animation moving x</title>
+	<link rel="stylesheet" href="css/build/app.css">
+</head>
+<body>
+
+
+	<div class="background likwid background-animation">
+		<div class="row">
+			<div class="col">
+				<div class="parent_box">
+					<div class="all_music">
+							Toute la musique<br>du moment,<br><strong class="green">sans pub !</strong>
+						</div>
+					</div>
+					<div class="parent_box">
+					<div class="offert">
+							Seulement<br><strong class="price">3<sup>€/mois</sup></strong><span class="note">pour la version complète !</span>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var likwid_bg = document.querySelectorAll(".likwid.background-animation")[0];
+		var backgroundOffset = 0;
+		setInterval(function(){
+			backgroundOffset--;
+			likwid_bg.style.backgroundPositionX = backgroundOffset+"px";
+		}, 60);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+html{
+	body{
+		margin: 0;
+	}
+	.background{
+		background: center top / contain url("./../../background_likwid.jpg") repeat-x;
+	}
+
+
+		.background{
+			//likwid
+			&.likwid{
+				width: 100%;		
+				padding: 100px 0 0;
+				min-height: 680px;		
+				background-position: 0% 0px;
+				.parent_box{
+					font-size: 70px;
+					font-family: sans-serif;
+					.all_music{
+						width: 378px;
+						background: white;
+						display: inline-block;
+						padding: 32px 40px;
+						color: #283138; 
+						font-size:40px;
+						line-height: 40px;
+						font-weight: 300;
+						.green{
+							color:#81c800;
+							font-size:70px;
+							line-height: 70px;
+						}
+					}
+					.offert{
+						width: 378px;
+						padding: 32px 40px;
+						display: inline-block;
+						position: relative;
+						background:green;
+						//@include background-image(linear-gradient(45deg, #92c01e, #5da06b));
+						font-size: 24px;
+						line-height: 26px;
+						color: white; 
+						font-weight: 600;
+						.price{
+							font-size: 70px;
+							line-height: 70px;
+						}
+						.note{
+							display: block;
+							font-weight: 300;
+							font-size: 22px;
+						}
+					}
+				}//end parent box
+			}//end likwid
+		}
+}
